@@ -1,0 +1,39 @@
+<%- include("./partials/header"); -%>
+<main>
+    <div class="a song">a</div>
+    <div class="b song">b</div>
+    <div class="c song">c</div>
+    <div class="d song">d</div>
+    <div class="e song">e</div>
+    <div class="f song">f</div>
+    <div class="g song">g</div>
+    <div class="h song">h</div>
+    <div class="i song">i</div>
+</main>
+<section>
+    <h1>CompoSe...</h1>
+<form class="" action="/falcon" method="POST">
+<div class="form-group">
+    <label class="q" >Author</label>
+        <input class="form-control" type="text" name="author" style="width:300px;">
+    <label class="q">Feedback</label>    
+        <textarea class="form-control" name="feedback"></textarea>
+        
+    </div>  
+    <div>
+            <button class="btn btn-primary" type="submit" name="button">Publish</button>
+            </div>  
+</form>
+</section>
+<br>
+<ul class="eee">
+    <% comment.forEach(function(posts){ %>
+        
+        <li class="com"><h4><strong><%= posts.author %></strong></h4><span> :</span> <p><%= posts.feedback %></p></li>
+           <%}); %>
+    
+    
+</ul>
+
+<script type="text/javascript" src="/music/play.js"></script>
+<%- include("./partials/footer"); -%>

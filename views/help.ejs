@@ -1,0 +1,52 @@
+<%- include("./partials/header"); -%>
+    
+    <h2>Guidelines and Help page</h2>
+
+    <p class="helpc">welcome to spotify!!!!!......we will help you with evrything and anything.. 
+        We are very sorry for incovinence up until now, but now since we are here, you wont get introuble.
+
+    </p>
+    <ul class="ul">
+        <li>Emphasize the beginning of the bullet point, as in this list, when the first few words capture the main idea. </li>
+        <li>Make bullet points consistent in structure.</li>
+        <li>Avoid making bullet points so long that they look like paragraphs.</li>
+    </ul>
+
+    <div id="help1">
+        <div class="row">
+        <div class="col-lg-4 col-md-6 col-xs-12">   
+        <div class="thumbnail">
+            <img src="Screenshot (103).png">
+            <div class="hide">
+                <h2 class="rating">
+                    <h2 class="rating"> 7/10 </h2>
+            </div> 
+            <div class="hide">
+                <h2>Pop Type</h2>
+            </div>
+        </div>
+    </div> 
+    <div class="col-lg-4 col-md-6 col-xs-12">   
+        <div class="thumbnail">
+            <img src="Screenshot (103).png">
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="card" style="width: 30rem; height: 30rem;">
+        <img class="card-img-top" src="Screenshot (103).png" alt="Card image cap">
+        <div class="card-body">
+          <h2 class="card-title"><b><i>Falcon</i></b></h2>
+          <p class="card-text"> 7.0/10 </p>
+          <a href="/falcon" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+      
+        <% posts.forEach(function(post){ %>
+          <h2><%= posts.author %></h2>
+           <p><%= posts.feedback %></p>
+           <%}); %>
+    
+
+<%- include("./partials/footer"); -%> 
